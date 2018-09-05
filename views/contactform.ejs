@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <% include ./partials/head %>
+  
+ <title>ContactUs</title>
+ 
+</head>
+
+<body>
+  
+<header>
+        <% include ./partials/header %>
+        
+<p id="static" >  <img class="img-fluid" src="/images/contactus.png" alt="Second slide" style="width:100%">
+</p>
+</header>
+<div class="container-fluid">
+    <div class="row " >
+    
+            <div class="col-sm-9" style="margin-left:7em; margin-top:5em;">
+              
+              <div class="row justify-content-center">
+                <div class="col-8 col-sm-8" style="padding:0.3em 1em">
+                  <H5>Our Location</H5>
+                  <div class="row" id="map"> </div>
+                </div>
+                <div class="col-4 col-sm-4" style="padding:  0.3em 1em">
+                    <H5>Our Location</H5>
+
+                  <div class="row">
+                      <div class="card" style="width: 20rem; font-size:83%">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item"> 
+                                <p  style=" text-transform:initial; padding-left:0.2em">25 First Avenue, Gwarimpa, Abuja - Nigeria.
+                                </p>
+                              <p  style="padding-left:0.2em"> <i class="fa fa-phone">&nbsp</i>+234 (0) 907 2727 256
+                             </p>   <p  style="padding-left:0.3em">  +234 (0) 907 8454 444. 
+                              </p>
+                              <p  style=" text-transform:initial; padding-left:0.2em">
+                                  <i class="fa fa-envelope">&nbsp</i>info@mspraises.org</p></div>
+                                  
+                              </p>  
+                            </li>
+                            </ul>
+                        </div>
+                     
+                    </div>
+              </div>
+          
+          </div>
+
+      <div class="col-sm-9" style=" margin-left:7em; margin-top:5em;">
+          <form action="/pages/contact" method="post">
+            
+        
+        <div class="row justify-content-center" >
+            <div class="col-sm-6">
+          <div class="form-group">
+              <input type="text" class="form-control"  name="name" id="name" placeholder="Enter name" style="background-color:transparent">
+            
+            </div>
+
+
+             <div class="form-group">
+              <input type="text" class="form-control" name ="state" id="state"  placeholder="Enter state"style="background-color:transparent">
+             </div>
+
+             <div class="form-group">
+              <input type="text" class="form-control" name="country" id="country" placeholder="Enter country"style="background-color:transparent">
+             </div>
+             <div class="form-group">
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Enter message"style="background-color:transparent"></textarea>
+            </div>
+            
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        
+         </div>
+         <div class="col-sm-6">
+            <div class="form-group">
+                <input type="text" class="form-control"  name="email" id="email" placeholder="Enter email" style="background-color:transparent">
+              
+              </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="city" id="city" placeholder="Enter city"style="background-color:transparent">
+               </div>
+
+               <div class="form-group">
+                  <input type="text" class="form-control" name ="zipcode" id="zipcode"  placeholder="Enter zipcode"style="background-color:transparent">
+                 </div>
+
+                 <div class="form-group">
+                    <input type="text" class="form-control" name="mobile" id="mobile"  placeholder="Enter mobile no."style="background-color:transparent">
+                   </div>
+         </div>
+        </div>
+      </form>
+      </div>
+         
+      </div>
+</div>
+<footer style="margin-top:4em;">
+        <% include ./partials/footer %>
+    </footer>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of msp
+        var msp = {
+          zoom:12,
+          center:{lat: 9.0765,  lng: 7.3986}};
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+            document.getElementById("map"), msp);
+        // The marker, positioned at Uluru
+       var marker = new google.maps.Marker({position: {lat:9.0912, lng:7.4133},
+        map: map});
+     
+     
+      }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUBImbxFZ5iULFiYsQEnK_HrGVahxgCf4&callback=initMap">
+      //   console.log(env.API_KEY + "error");
+         </script>
+        
+      
+</body>
+
+</html>

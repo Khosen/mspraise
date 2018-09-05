@@ -1,0 +1,713 @@
+
+   
+.full{
+    background-color:none!important;
+    text-transform: uppercase;
+    color:grey;
+    
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+     
+}
+body{
+   color:	#484848 ;
+    text-transform: uppercase;
+}
+
+.menudiv{
+    text-decoration: none;
+    display: inline-block;
+    
+   
+}
+.submenu{
+    text-decoration: none;
+}
+
+.listdiv{
+    text-decoration: none; 
+}
+.jumbotron {
+    background-color:transparent !important; 
+}
+.navigation{
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+
+    padding-left: 5rem;
+    padding-right:5rem;
+  align-self: justify-content;
+}
+.navclass{
+    width:100%;
+    height:3rem;
+    text-align: center;
+    background-color: gold;
+   
+}
+.navitem{
+    padding-left: 1rem;
+    padding-right:2rem;
+}
+
+.navitem2{
+    padding-left: 2rem;
+    padding-right:1rem;
+}
+
+.itemsdiv{
+   /* z-index: 1;
+    margin-top:0;  
+    box-shadow: 0 8px 6px -6px black;
+    text-align: center;
+        border-radius: 3px;*/
+        z-index:11;
+      
+         position:relative;
+        margin-top:0;
+        padding-top:0;
+      
+      
+       
+}
+.siteheader{
+  display:block;
+  
+  margin:auto;
+    
+}
+
+.siterow{
+    width:100%;
+    height:8rem;
+   
+}
+.slash {
+    width: 2px;
+    height: 10px;
+    color:grey;   
+    transform:rotate(45deg);
+}
+.topright{
+    float:right;
+    width: 25%;
+    text-align: right;
+   padding-right: 5rem;
+    margin-top: 2rem;
+ display:table-cell;
+ /*background-color: palegreen;*/
+    
+}
+.topleft{
+    float:left;
+ width: 25%;
+ align-self: auto;
+height:95%;
+  display:table-cell;
+ 
+}
+.logodiv{
+  background-color: transparent;
+ 
+  height:5rem;
+  border-bottom: 0.2rem;
+  border-bottom-style: solid;
+  border-bottom-color: 	#C8C8C8 ;
+  margin-bottom: 0;
+  padding-bottom: 0;
+ 
+}
+.aclass:hover{
+    
+        text-decoration: none;
+   color:lightblue;
+}
+.aclass{
+    
+        text-decoration: none;
+   color:#484848;
+}
+
+
+.card{
+    background-color: rgb(59, 4, 59);
+}
+.carddiv{
+    margin-left:10rem;
+}
+.fa-calendar{
+    margin-top:1rem;
+    font-size: 48px;
+    color:gray;
+}
+.calendar-row{
+    width:15rem;
+    height:5rem;
+    display:table-cell;
+  
+   
+    
+}
+.coldiv{
+    display:table-cell;
+  
+    float:right;
+    margin-right:3rem;
+}
+.calendar-col{
+    display:table-cell;
+  
+    float:left;
+}
+.nextdiv{
+    margin-top:1rem;
+    width:3rem;
+    display:block;
+    color:white;
+    background-color: indigo;
+}
+.updiv{
+    display:block;
+}
+#one {
+    
+     float:left; 
+   margin-top:0.5rem;
+     width:3rem;
+  
+   }
+   #two { 
+    
+     overflow:hidden;
+     margin-left:1rem;
+    margin-top:1.1rem;
+   /*  min-height:170px;*/
+   }
+   
+  
+ 
+   .btnblock{
+      padding-top:1rem;
+   }
+   #eventdate {
+     
+      float:left; 
+    margin-top:0.5rem;
+ 
+    width:4rem;
+  
+      overflow:hidden;
+      
+     
+    }
+    #eventdiv { 
+     
+      overflow:hidden;
+      margin-left:5rem;
+     margin-top:1rem;
+     text-transform: initial;
+     
+    /*  min-height:170px;*/
+    }
+    .innereventtop{
+        margin-bottom:-0.6rem;
+        font-size:95%;
+        color:palevioletred;
+        font-weight: bold;
+        text-transform: initial;
+    }
+    .innerevent{
+    font-size: smaller;
+    font-style:italic;
+  
+    
+    }
+    .buttondiv{
+        margin-top: 1rem;
+        margin-bottom:1rem;
+    }
+    
+ .datediv{
+     overflow:hidden;
+      font-size:2rem;
+     text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    display: block;
+    margin-bottom:-1.2rem;
+    
+   
+ }
+ .monthdiv{
+     text-align:center;
+     text-transform: initial;
+     white-space: nowrap;
+     overflow:hidden;
+     font-size: smaller;
+     font-style: italic;
+ 
+      }
+      .headerdiv{
+         text-transform: initial;
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+          border-bottom-color:wheat;
+      }
+      .morediv{
+         border-bottom-width: 1px;
+         border-bottom-style: solid;
+         border-bottom-color:wheat;
+      }
+      .moreevents{
+         margin-left:7rem;
+      }
+      .videodiv{
+         text-transform: initial;
+         border-bottom-width: 2px;
+         border-bottom-style: solid;
+         border-bottom-color:wheat;
+      }
+      #imagediv {
+         
+          float:left; 
+        margin-top:0.5rem;
+     
+        width:10rem;
+      
+          overflow:hidden;
+          
+         
+        }
+        #eventimage { 
+         
+          overflow:hidden;
+          margin-left:12rem;
+         margin-top:1rem;
+       
+         
+        /*  min-height:170px;*/
+        }
+        .eventimage { 
+         
+         text-transform: initial;
+         border-bottom-width: 0.5px;
+         border-bottom-style: solid;
+         border-bottom-color:wheat;
+         padding-bottom:1rem;
+         
+        /*  min-height:170px;*/
+        }
+        .eventbutton{
+            margin-top:0.5rem;
+        }
+      .eventimageinner{
+         text-transform: initial;
+         margin-bottom: 1rem;
+         font-size:small;
+         text-align: justify;
+ 
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        outline: none;
+        box-sizing: border-box;
+    }
+    
+   
+    .navbar-fixed {
+        top: 0;
+        z-index: 1000;
+      position: fixed;
+      background-color: whitesmoke;
+      opacity:0.7;
+        width: 100%;
+    
+    }
+    
+    #banner {
+        width: 100%;
+        height: 100px;
+        z-index:2000;
+        position:relative;
+        box-shadow: 0 8px 6px -6px gray;
+        background-color: whitesmoke;
+        opacity: 0.7;
+        overflow: hidden;
+    }
+    
+    #nav_bar {
+        border: 0;
+    
+        border-radius: 0px;
+        margin-bottom: 0;
+        margin-top:0;
+        height: 3rem;
+       
+       
+    }
+    .breadcrumb{
+        background-color: transparent;
+    }
+    
+    .nav_links {
+        margin: 0;
+    }
+    
+    
+    /*.nav_links li {
+        display: inline-block;
+        margin-top: 4px;
+    }
+    .nav_links li a {
+        padding: 0 15.5px;
+        color: #3498db;
+        text-decoration: none;
+    }
+    .rowdiv{
+        
+          border-bottom: 0.1rem;
+          border-bottom-style: solid;
+          border-bottom-color: 	#C8C8C8 ;
+          margin-bottom: 0;
+      }*/
+      .nopadding {
+        padding: 0 !important;
+        margin: 0 !important;
+     }
+    
+ 
+     .timerbox {
+        
+        width: 3rem;
+    margin-top:1rem;
+        float: left;
+        margin-right: 0rem;
+        margin-left: 0.5rem;
+        
+        }
+        
+        .words{
+            margin-top:0.5rem;
+            font-size: 0.6rem;
+            color:#E0E0E0 ;
+        }
+  
+    .post-content {
+       
+        opacity: 1;
+        top:0;
+        left:1rem;
+        padding-right:1rem;
+     
+        background-color:plum;
+        position: absolute;
+        margin-top:8rem;
+        z-index:1;
+        transition:top ease 1.8s;
+      
+    }
+    
+      #parent:hover .post-content{
+     top: -1.5rem;
+           
+     }
+    
+    .more{
+        background-color:white;
+        position:absolute;
+        display: block;
+        margin-top:8rem;
+        top:0;
+        left:1rem;
+        
+          
+    }
+    
+    /*@import "https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/flexslider.min.css";*/
+
+
+ 
+  .cont{
+    
+       margin-top: 0;
+       padding-top: 0;
+   }
+  
+  .nav {
+      margin-top: .3rem;
+      margin-bottom: 0;
+       height: 3rem;
+      list-style: none;    
+      float: right; /* Clear floats */
+      width: 100%;
+      text-align: justify;
+      background-color: purple;
+      /* Bring the nav above everything else--uncomment if needed.
+      position: relative;
+      box-shadow: 0 8px 6px -6px black;*/
+      z-index: 1;
+      box-shadow: 0px 6px 6px -6px black;
+      border-radius:0.3rem;
+      
+  }
+  /*.nav :hover{
+        box-shadow: 10px 10px 5px grey;
+  }*/
+  .nav li {
+      float: left;
+      margin-right: 10px;
+      position: relative;
+      padding-left:1rem;
+      padding-right:1rem;
+      margin-top: .5rem;
+    
+  }
+  .nav a {
+      
+      display: block;
+      padding: 5px;
+      color: yellow;
+    
+      text-decoration: none;
+  }
+  .nav a:hover {
+      color: indigo;
+      text-decoration: none;
+  }
+  
+  /*--- DROPDOWN ---*/
+  .nav ul {
+      background-color: rgb(170, 169, 169); /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+      background: gray; /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+      list-style: none;
+      box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.2);
+      border-radius:0.3rem;
+      padding: 10px 12px;
+      position: absolute;
+      left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+  }
+  .nav ul li {
+      padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+      float: none;
+  }
+  .nav ul a {
+      white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+  }
+  .nav li:hover ul { /* Display the dropdown on hover */
+      left: 0; /* Bring back on-screen when needed */
+  }
+  .nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+      background-color: #f1edef;
+      text-decoration: none;
+  }
+  .nav li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+      text-decoration: none;
+  }
+  .nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+      background-color: plum;
+  }
+  
+  .nav ul {
+      background-color: plum; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+      background:plum; /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+      list-style: none;
+      position: absolute;
+      left: -9999px; /* Hide off-screen when not needed (this is more accessible than display: none;) */
+  }
+  
+  .nav ul li {
+      padding-top: 1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+      float: none;
+  }
+  .nav ul a {
+      white-space: nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+  }
+  .nav li:hover ul { /* Display the dropdown on hover */
+      left: 0; /* Bring back on-screen when needed */
+  }
+  
+  .nav li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+      background-color: transparent;
+      text-decoration: none;
+  }
+  
+  .nav li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+      background-color: plum;
+    
+  
+  }
+  
+  .navlinks{
+      margin-top: 1rem;
+      margin-bottom: 0;
+     float: right;
+     display:block;
+      text-decoration: none;
+      list-style-type: none;
+    
+      color:lightblue;
+  }
+  /*.nav ul li a {
+      border-bottom:1px solid rgb(88, 88, 88);
+    
+   
+  }*/
+    
+/*    @media only screen and (max-width: 600px) {
+        #one { 
+            float:left;
+            margin-left:2rem;
+            margin-right:1rem;
+            width:auto;
+            border:0;
+      
+          }
+          #two { 
+            
+            float: none;
+            margin-top:1.5rem;
+          
+            margin-left:2rem;
+            width:auto;
+            border:0;
+           }
+           #three { 
+               
+               float: none;
+               margin-top:-1rem;
+               margin-left:2rem;
+               width:auto;
+               border:0;
+              }
+              #btndiv{
+                display:none;
+            }
+            #rowevents{
+                margin:0;
+            }
+            .headerdiv{
+               text-align: justify;
+            }
+      .nav {
+          margin-top: 5rem;
+          margin-bottom: 0;
+           color:lightblue;
+          list-style: none;    
+          float: right; /* Clear floats */
+         /* width: 100%;*/
+          /* Bring the nav above everything else--uncomment if needed.
+          position: relative;
+          z-index: 5;
+         
+          
+      }
+      .navbar-fixed {
+        top: 0;
+        z-index: 1000;
+      position: fixed;
+      background-color: whitesmoke;
+      opacity:0.7;
+        width: 100%;
+    
+    }
+    .collapse .navbar-collapse{
+        width:auto;
+    }
+   .container-fluid{
+        width:auto;
+   }
+   }
+   @media (max-width: 1026px) {
+      .mediadiv {
+          display: none;
+      }
+  }*/
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 320px) {
+    #one { 
+       display:none;
+      
+      }
+      #two { 
+        display:none;
+       }
+       #three { 
+           
+           float: none;
+           margin-top:3rem;
+           margin-left:1rem;
+           width:auto;
+           border:0;
+           font-size:75%;
+          }
+          #three a{
+              font-size:75%;
+          }
+          .navbar-toggler-icon{
+            width:auto;
+            
+        }
+       
+        #btndiv{
+            display:none;
+        }
+        #rowevents{
+            margin:0;
+        }
+        .headerdiv{
+           text-align: justify;
+        }
+  .nav {
+      margin-top: 5rem;
+      margin-bottom: 0;
+       color:lightblue;
+      list-style: none;    
+      float: right; /* Clear floats */
+      width: 100%;
+      /* Bring the nav above everything else--uncomment if needed.
+      position: relative;
+      z-index: 5;
+      */
+      
+    box-shadow: 0px 6px 6px -6px black;
+    border-radius:0.3rem;
+  }
+ 
+  #events{
+      z-index:9999;
+  }
+ 
+ /* .navbar-fixed {
+    top: 0;
+    z-index: 1000;
+  position: fixed;
+  background-color: whitesmoke;
+  opacity:0.7;
+    width:100%;
+
+}*/
+.collapse .navbar-collapse{
+    width:auto;
+}
+.container-fluid{
+    width:auto;
+}
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+
+ 

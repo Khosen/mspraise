@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <% include ./partials/head %>
+        
+<title>Partnership</title>
+</head>
+
+<body>
+
+<header style="margin-bottom:1em;">
+<% include ./partials/header %>
+<div class="row justify-content-center" id="pdiv" style="background-color:whitesmoke">
+
+<div class="col-12 col-md-9"  >
+<h3><p > Education</p> </h3>  
+</div>
+</div>
+</header>
+<div class="container-fluid" style="margin-top:4em">
+<div class="row justify-content-center" >
+    <div class="col-12 col-md-6">
+        <div class="row">
+            <div class="col-12" style="background-color:whitesmoke; padding:0.5em">ddd</div>
+            </div>
+    </div>
+    <div class="col-4 col-md-3">     <h4>Post Categories</h4>
+    </div>
+    <div class="col-12 col-md-6" style=" margin-top:1em;">
+        <div class="row">
+            <div class="col-12" ><img src="/images/img2.png" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 "   style=" margin-top:1em;" id="partnershipdiv"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel.
+                 Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, 
+                  ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit
+                   amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
+                    Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.
+                </p>
+          <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis
+               egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus
+                vel. Donec vel mauris quam. Lorem ipsum dolor sit amet, consectetur
+                 adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis 
+                 fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. 
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla convallis egestas rhoncus. Donec facilisis fermentum sem,
+                   ac viverra ante luctus vel. Donec vel mauris quam.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, 
+                    ac viverra ante luctus vel. Donec vel mauris quam.
+                
+               </p> </div>
+        </div>
+    </div>
+    <div class="col-4 col-md-3" style=" margin-top:1em;">
+   
+            <ul class="list-group list-group-flush" id="ulid" style="height:0.2em; background-color:whitesmoke">
+                    <li class="list-group-item"><a href="#"> Medicals</a></li>
+                    <li class="list-group-item"><a href="#"> Vocation</a></li>
+                     <li class="list-group-item"><a href="#"> Empowerment</a></li>
+                     <li class="list-group-item"><a href="#"> Counseling</a></li>
+                  </ul> 
+    </div>
+    <div class="col-12 col-md-6" style="margin-top:3em">
+    <div class="row justify-content-center">
+    <div class="col-12" style="background-color:whitesmoke; padding:0.5em 2em">
+      <h5>  <i class="fa fa-mail-forward"></i>&nbspPost a comment</h5>
+    </div>
+    </div>
+        </div>
+        <div class="col-4 col-md-3">    </div>
+
+    <div class="col-12 col-md-6" style=" margin-top:1em;">
+        <div class="row">
+           <div class="col-12 "   style=" margin-top:1em;" id="partnershipdiv">
+                     
+                                <div class="comments">
+                                        <% 
+                                        if (typeof comments != 'undefined' && comments != null) {
+                                                comments.forEach( function ( commentData ){
+                                                        %>
+                                        <p> <%= commentData.comment %> <%= commentData.name %>
+                                             <%= commentData.state %> </p>
+                                        <% });
+                                        } %>
+                                
+                                </div>
+
+                                <div class="form-row">
+                                  <div class="col-7">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                  </div>
+                                  <div class="col col-md-auto">
+                                    <input type="text" class="form-control" id="state" placeholder="State">
+                                  </div>
+                                 <div class="w-100"></div>
+                                <div class="form-group" style="margin-top:1em">
+                                  <p> <textarea class="form-control" rows="5" id="comment" placeholder="Comment"></textarea>
+                                      </p> 
+                                      <input type="hidden" id="postId" value="<%= postId %>"> 
+                                        
+                                    </div>
+                                    <div class="w-100"></div>
+                                    <input type="submit" value="Send" id="send"> 
+              </div>
+            </div>
+        </div>
+        <div class="col-4 col-md-3" style=" margin-top:1em;">
+       </div>
+
+</div>       
+</div>
+<footer style="margin-top:4em;">
+<% include ./partials/footer %>
+</footer>
+</body>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    var socket = io();
+    $('#send').click(function(){
+        var comment = $('#comment').val();
+        var name = $('#name').val();
+        var state = $('#state').val();
+        var postId = $('#postId').val();
+        if(comment != ''){
+            var data = {'comment': comment, 'name':name, 'state':state,'postId': postId};
+        $('.comments').append("<p>"+comment+ name+state+"</p>");
+        $('#comment').val('');
+        $('#name').val('');
+        $('#state').val('');
+        }
+        
+    socket.emit('comment',data);
+
+
+    });
+
+    socket.on('comment',function(data){
+        var postId = "<%= postId %>";
+        if(postId==data.postId){
+            $('.comments').append("<p>"+data.comment+ data.name+data.state+"</p>");
+        }
+        });
+    
+
+          
+    
+    </script>
+</html>

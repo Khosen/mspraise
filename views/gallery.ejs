@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <% include ./partials/head %>
+        
+ <title>Gallery</title>
+</head>
+
+<body>
+  
+<header>
+        <% include ./partials/header %>
+              
+        <p id="static" >  <img class="img-fluid" src="/images/gallery2.png" alt="Second slide">
+        </p>
+        
+    </header>
+<div class="container-fluid w-75">
+    <div class="row h-100 mx-auto justify-content-center">
+    <div class="card-columns">
+            <div class="card">
+              <a href="/pages/outreachgallery"><img class="card-img-top" src="/images/img5.png" alt="Card image cap"></a>
+              <div class="card-body">
+            <form action="/outreach" method="GET">
+                <h5 class="card-title"><a href="/pages/outreachgallery">Outreach photos June 2018</a></h5>
+                    </form></div>
+            </div>
+           
+            <div class="card">
+                <a href="/pages/fellowshipgallery"><img class="card-img-top" src="/images/img.png" alt="Card image cap"></a>
+              <div class="card-body">
+                  <form action="/fellowship" method="GET">
+                <h5 class="card-title"><a href="/pages/fellowshipgallery">Fellowsip  photos March 2018</a></h5>
+                </form> </div>
+            </div>
+            <div class="card">
+                <a href="/pages/medicalgallery">   <img class="card-img-top" src="/images/img5.png" alt="Card image cap"></a>
+                    <div class="card-body">
+                        <form action="/medical" method="GET">
+                      <h5 class="card-title"><a href="/pages/medicalgallery">Medical</a></h5>
+                      </form> </div>
+                  </div>
+                  <div class="card">
+                      <a href="/pages/vocationalgallery"><img class="card-img-top" src="/images/img5.png" alt="Card image cap"></a>
+                        <div class="card-body">
+                            <form action="/vocational" method="GET">
+                          <h5 class="card-title"><a href="/pages/vocationalgallery">Vocational training 2018</a></h5>
+                          </form></div>
+                      </div>
+                      <div class="card">
+                          <a href="/pages/empowermentgallery"> <img class="card-img-top" src="/images/img5.png" alt="Card image cap"></a>
+                            <div class="card-body">
+                                <form action="/empowerment" method="GET"></form>
+                              <h5 class="card-title"><a href="/pages/empowermentgallery">Empowerment</a></h5>
+                               </div>
+                          </div>
+                          <div class="card">
+                              <a href="/pages/prisonsgallery">   <img class="card-img-top" src="/images/img.png" alt="Card image cap"></a>
+                                <div class="card-body">
+                                    <form action="/prison" method="GET">
+                                  <h5 class="card-title"><a href="/pages/prisonsgallery">Prisons visits 2018</a></h5>
+                               </form>  </div>
+                              </div>
+            </div>
+         
+          </div>
+        </div>
+    </div>
+    <footer style="margin-top:4em;">
+        <% include ./partials/footer %>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="jquery.touchSwipe.min.js"></script>
+    
+    <script type="text/javascript" src="simplegallery.js">
+    
+    /***********************************************
+    * Simple Controls Gallery- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+    * Please keep this notice intact
+    * Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+    ***********************************************/
+    
+    </script>
+    
+    <script type="text/javascript">
+    
+    var mygallery=new simpleGallery({
+      wrapperid: "simplegallery1", //ID of main gallery container,
+      dimensions: [250, 180], //width/height of gallery in [pixels, pixels] or ['percentage%', pixels]
+      imagearray: [
+        ["http://dynamicdrive.com/dynamicindex4/pool.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", ""],
+        ["http://dynamicdrive.com/dynamicindex4/cave.jpg", "http://en.wikipedia.org/wiki/Cave", "", ""],
+        ["http://dynamicdrive.com/dynamicindex4/fruits.jpg", "", "", ""],
+        ["http://dynamicdrive.com/dynamicindex4/autumn.jpg", "", "", ""]
+      ],
+      autoplay: [true, 2500, 2], //[auto_play_boolean, delay_btw_slide_millisec, cycles_before_stopping_int]
+      persist: false,
+      scaleimage: 'both', //valid values are 'both', 'width', or 'none'
+      fadeduration: 500, //transition duration (milliseconds)
+      oninit:function(){ //event that fires when gallery has initialized/ ready to run
+      },
+      onslide:function(curslide, i){ //event that fires after each slide is shown
+        //curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+        //i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+      }
+    })
+    
+    </script>
+</body>
+</html>

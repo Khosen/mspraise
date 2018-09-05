@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<% include ./partials/head %>
+		
+	<title>Gallery</title>
+</head>
+<body>
+	<header>
+			<% include ./partials/header %>
+	</header>
+   <section class="gallery-block cards-gallery">
+	    <div class="container">
+	        <div class="heading">
+	          <h2>Cards Gallery</h2>
+	        </div>
+	        <div class="row">
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="/images/image1.jpg">
+							<img src="/images/image1.jpg" alt="Card Image" class="card-img-top">
+						</a>
+						<div class="card-body">
+								</div>
+	                </div>
+	            </div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+						<a class="lightbox" href="/images/image2.jpg">
+		                	<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+		                </a>
+	                   
+	                </div>
+				</div>
+				
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="/images/image3.jpg">
+	                		<img src="/images/image3.jpg" alt="Card Image" class="card-img-top">
+	                	</a>
+	                  </div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="/images/image2.jpg">
+								<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+							</a>
+						   
+						</div>
+					</div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="/images/image4.jpg">
+	                		<img src="/images/image4.jpg" alt="Card Image" class="card-img-top">
+	                	</a>
+	                   
+	                </div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="/images/image2.jpg">
+								<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+							</a>
+						   
+						</div>
+						<div class="card-body">
+							</div>
+					</div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="/images/image5.jpg">
+	                		<img src="/images/image5.jpg" alt="Card Image" class="card-img-top">
+	                	</a>
+	                   
+	                </div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="/images/image2.jpg">
+								<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+							</a>
+						   
+						</div>
+					</div>
+	            <div class="col-md-6 col-lg-4">
+	                <div class="card border-0 transform-on-hover">
+	                	<a class="lightbox" href="/images/image6.jpg">
+	                		<img src="/images/image6.jpg" alt="Card Image" class="card-img-top">
+	                	</a>
+						<div class="card-body">
+							</div>
+	                </div>
+				</div>
+				<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="/images/image1.jpg">
+								<img src="/images/image1.jpg" alt="Card Image" class="card-img-top">
+							</a>
+							<div class="card-body">
+									</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+						<div class="card border-0 transform-on-hover">
+							<a class="lightbox" href="/images/image2.jpg">
+								<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+							</a>
+						   
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-4">
+							<div class="card border-0 transform-on-hover">
+								<a class="lightbox" href="/images/image2.jpg">
+									<img src="/images/image2.jpg" alt="Card Image" class="card-img-top">
+								</a>
+							   
+							</div>
+						</div>
+	        </div>
+	    </div>
+	</section>
+	
+	<footer style="margin-top:4em;">
+			<% include ./partials/footer %>
+		</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+	<script src="js/baguetteBox.min.js" async></script>
+	
+	<script>
+        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
+    </script>
+</body>
+</html>

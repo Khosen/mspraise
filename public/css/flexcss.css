@@ -1,0 +1,33 @@
+.flex-caption { 
+    background: skyblue; 
+    color: white;
+    position: absolute;
+    bottom: 0;
+    padding: 0em;
+    top:0;
+  }
+  .flexslider{
+    margin-top:-11rem;
+    margin-bottom: 0rem;
+}
+
+.flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+  
+.flex-direction-nav .flex-next {
+    right: 0rem;;
+  
+}
+
+
+
+  
+/*.flexslider{
+    margin-top:-10rem;
+
+      
+}*/

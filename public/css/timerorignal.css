@@ -1,0 +1,131 @@
+  
+    
+    #timer .countdown-wrapper {
+        margin: 0 auto;
+        }
+        #timer #countdown {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        color: whitesmoke;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px black;
+        padding: 0.625rem ;
+        }
+        #timer .countdown-wrapper #countdown .timer {
+        margin: 0.312rem;
+        padding: 1rem;
+        font-size:0.8rem;
+        
+        cursor: pointer;
+        }
+        #timer .col-md-4.countdown-wrapper #countdown .timer {
+        margin: 0.312rem;
+        padding: 1rem;
+        font-size:0.8rem;
+        
+        cursor: pointer;
+        }
+        #day{
+        background-color: purple;
+        border-radius: 15%;
+        padding:0.5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        }
+        #day:hover{
+        background-color: plum;
+        }
+        
+        #hour{
+        background-color: gray;
+        padding:0.5rem;
+        border-radius: 15%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        }
+        #hour:hover{
+        background-color: wheat;
+        }
+        #min{
+        background-color: gray;
+        padding:0.5rem;
+        border-radius: 15%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        }
+        #min:hover{
+        background-color: wheat;
+        }
+        #sec{
+        background-color: gray;
+        padding:0.5rem;
+        border-radius: 15%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        }
+        #sec:hover{
+        background-color: wheat;
+        }
+        
+        #timer .countdown-wrapper .card .card-footer .btn {
+        margin: 0.125rem 0;
+        }
+        #ctimer{
+        
+          }
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+        #timer .countdown-wrapper #countdown .timer {
+            margin: 0.625rem;
+            padding: 1.25rem;
+            font-size: 0.8rem;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+        }
+      @media (min-width: 768px) and (max-width: 991px) {
+         #timer .countdown-wrapper #countdown .timer {
+            margin: 0.625rem;
+            padding: 1.25rem;
+            font-size: 0.8rem;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+        }
+        @media (max-width: 768px) {
+        #timer .countdown-wrapper #countdown .timer {
+           margin: 0.625rem;
+            padding: 1.25rem;
+            font-size: 0.8rem;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+        }
+        @media (max-width: 767px) {
+        #timer .countdown-wrapper #countdown #hour,
+        #timer .countdown-wrapper #countdown #min,
+        #timer .countdown-wrapper #countdown #sec {
+            font-size: 0.8rem;
+            border-radius: 20%;
+        }
+        }
+        @media (max-width: 576px){
+        #timer .countdown-wrapper #countdown #hour,
+        #timer .countdown-wrapper #countdown #min,
+        #timer .countdown-wrapper #countdown #sec {
+            font-size: 0.4rem;
+            border-radius: 20%;
+        }
+        #timer .countdown-wrapper #countdown .timer {
+            padding: 0.625rem;
+        }
+      
+        
+        }
+
+        @media only screen and (min-width: 600px) {
+           
+         .countdown-wrapper{
+          
+         }
+        }

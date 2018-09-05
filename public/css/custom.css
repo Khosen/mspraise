@@ -1,0 +1,21 @@
+
+.nav a{
+    color: skyblue;
+    font-weight: bold;
+}
+.nav a:hover{
+    color:navy;
+    font-weight: bold;
+}
+
+.nav-item{
+    color:skyblue;
+}
+.nav-link{
+   
+    color: navy!important;
+}
+.nav-link:hover{
+    
+     color: lightblue!important;
+ }
